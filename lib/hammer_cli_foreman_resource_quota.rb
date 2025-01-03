@@ -2,7 +2,7 @@ module HammerCLIForemanResourceQuota
   require 'hammer_cli'
   require 'hammer_cli_foreman'
   require 'hammer_cli_foreman/host'
-  #require 'hammer_cli_foreman/hostgroup'
+  # require 'hammer_cli_foreman/hostgroup'
 
   require 'hammer_cli_foreman_resource_quota/version'
   require 'hammer_cli_foreman_resource_quota/host'

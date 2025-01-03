@@ -96,7 +96,6 @@ module HammerCLIForemanResourceQuota
       build_options
     end
 
-
     class ShowUsersCommand < ShowCommand
       action :users
       command_name 'show-users'
@@ -120,6 +119,5 @@ module HammerCLIForemanResourceQuota
     end
 
     autoload_subcommands
-
   end
 end
