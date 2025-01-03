@@ -1,0 +1,32 @@
+inherit_from: .rubocop_todo.yml
+
+inherit_gem:
+  theforeman-rubocop:
+    - strictest.yml
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Style/HashSyntax:
+  EnforcedStyle: no_mixed_keys
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/GuardClause:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false

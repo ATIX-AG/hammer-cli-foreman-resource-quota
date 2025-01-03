@@ -1,0 +1,1 @@
+require 'hammer_cli_foreman_resource_quota/command_extensions/host'

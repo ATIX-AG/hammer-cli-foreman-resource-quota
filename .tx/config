@@ -1,0 +1,9 @@
+[main]
+host = https://app.transifex.com
+
+[o:foreman:p:foreman:r:hammer_cli_foreman_resource_quota]
+file_filter = locale/<lang>/hammer_cli_foreman_resource_quota.edit.po
+source_file = locale/hammer_cli_foreman_resource_quota.pot
+source_lang = en
+type = PO
+resource_name = hammer_cli_foreman_resource_quota
