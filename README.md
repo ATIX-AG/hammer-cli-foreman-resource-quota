@@ -9,7 +9,7 @@ This Hammer CLI plugin contains set of commands for [foreman_resource_quota](
 This is the list of which version of Foreman Resource Quota is needed to which version of this plugin.
 
 | hammer_cli_foreman_resource_quota | 0.0.1+ |
-|----------------------------|------|--------|
+|-----------------------------------|--------|
 |            foreman_resource_quota | 0.3.1+ |
 
 ## Installation
