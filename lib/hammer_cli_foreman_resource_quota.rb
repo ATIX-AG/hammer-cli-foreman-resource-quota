@@ -4,11 +4,11 @@ module HammerCLIForemanResourceQuota
   require 'hammer_cli_foreman/host'
 
   require 'hammer_cli_foreman_resource_quota/version'
+  require 'hammer_cli_foreman_resource_quota/i18n'
+  require 'hammer_cli_foreman_resource_quota/resource_quota'
   require 'hammer_cli_foreman_resource_quota/user'
   require 'hammer_cli_foreman_resource_quota/usergroup'
   require 'hammer_cli_foreman_resource_quota/host'
-  require 'hammer_cli_foreman_resource_quota/i18n'
-  require 'hammer_cli_foreman_resource_quota/resource_quota'
   require 'hammer_cli_foreman_resource_quota/command_extensions'
 
   HammerCLI::MainCommand.lazy_subcommand(

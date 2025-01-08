@@ -1,6 +1,17 @@
 # frozen_string_literal: true
 
 module HammerCLIForemanResourceQuota
+
+  class ShowCommand < HammerCLIForeman::Command
+    output do
+      field :id, _('Id')
+    end
+
+    def adapter
+      :table
+    end
+  end
+
   class ResourceQuotaCommand < HammerCLIForeman::Command
     resource :resource_quota
 
@@ -61,16 +72,6 @@ module HammerCLIForemanResourceQuota
 
       build_options do |o|
         o.without('memory_mb', 'disk_gb')
-      end
-    end
-
-    class ShowCommand < HammerCLIForeman::Command
-      output do
-        field :id, _('Id')
-      end
-
-      def adapter
-        :table
       end
     end
 
