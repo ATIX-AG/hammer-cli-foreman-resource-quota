@@ -6,10 +6,10 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_resource_quota 0.5.0\n"
+"Project-Id-Version: hammer_cli_foreman_resource_quota 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 14:40+0000\n"
-"PO-Revision-Date: 2023-07-12 14:40+0000\n"
+"POT-Creation-Date: 2025-01-08 13:12+0000\n"
+"PO-Revision-Date: 2025-01-08 13:12+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,3 +18,122 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+#: ../lib/hammer_cli_foreman_resource_quota/host.rb:8
+msgid "Resource quota id"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:7
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:20
+msgid "Id"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:21
+msgid "Name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:22
+msgid "Created at"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:23
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:38
+msgid "CPU cores"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:24
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:39
+msgid "Memory [MiB]"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:25
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:40
+msgid "Disk space [GiB]"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:26
+msgid "Assigned hosts"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:33
+msgid "Number of users"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:34
+msgid "Number of usergroups"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:35
+msgid "Number of missing hosts"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:36
+msgid "Utilization"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:48
+msgid "Resource quota created."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:49
+msgid "Could not create resource quota"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:51
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:70
+msgid "Maximum memory in MiB"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:52
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:71
+msgid "Maximum disk space in GiB"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:60
+msgid "Resource quota [%{name}] was deleted."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:61
+msgid "Could not delete the resource quota"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:67
+msgid "Resource quota [%{name}] updated."
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:68
+msgid "Could not update the resource quota"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:83
+msgid "Host name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:94
+msgid "Usergroup name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:105
+msgid "User name"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/resource_quota.rb:116
+msgid "Missing hosts"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/user.rb:8
+msgid "Resource quota settings"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/user.rb:9
+msgid "Resource quota is optional"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/user.rb:10
+#: ../lib/hammer_cli_foreman_resource_quota/user.rb:18
+#: ../lib/hammer_cli_foreman_resource_quota/usergroup.rb:8
+msgid "Resource quota ids"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_resource_quota/user.rb:17
+msgid "Resource quota optional"
+msgstr ""

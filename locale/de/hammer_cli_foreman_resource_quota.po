@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer_cli_foreman_resource_quota package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer_cli_foreman_resource_quota 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-12 14:40+0000\n"
+"PO-Revision-Date: 2025-01-07 14:47+0000\n"
+"Language-Team: German (https://app.transifex.com/foreman/teams/114/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Resource quota id"
+msgstr ""
+
+msgid "Id"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Created at"
+msgstr ""
+
+msgid "CPU cores"
+msgstr ""
+
+msgid "Memory [MiB]"
+msgstr ""
+
+msgid "Disk space [GiB]"
+msgstr ""
+
+msgid "Assigned hosts"
+msgstr ""
+
+msgid "Number of users"
+msgstr ""
+
+msgid "Number of usergroups"
+msgstr ""
+
+msgid "Number of missing hosts"
+msgstr ""
+
+msgid "Utilization"
+msgstr ""
+
+msgid "Resource quota created."
+msgstr ""
+
+msgid "Could not create resource quota"
+msgstr ""
+
+msgid "Maximum memory in MiB"
+msgstr ""
+
+msgid "Maximum disk space in GiB"
+msgstr ""
+
+msgid "Resource quota [%{name}] was deleted."
+msgstr ""
+
+msgid "Could not delete the resource quota"
+msgstr ""
+
+msgid "Resource quota [%{name}] updated."
+msgstr ""
+
+msgid "Could not update the resource quota"
+msgstr ""
+
+msgid "Host name"
+msgstr ""
+
+msgid "Usergroup name"
+msgstr ""
+
+msgid "User name"
+msgstr ""
+
+msgid "Missing hosts"
+msgstr ""
+
+msgid "Resource quota settings"
+msgstr ""
+
+msgid "Resource quota is optional"
+msgstr ""
+
+msgid "Resource quota ids"
+msgstr ""
+
+msgid "Resource quota optional"
+msgstr ""
