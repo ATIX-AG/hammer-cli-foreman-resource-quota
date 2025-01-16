@@ -7,7 +7,7 @@ module HammerCLIForemanResourceQuota
       output do
         label N_('Resource quota settings') do
           field :resource_quota_is_optional, _('Resource quota is optional'), Fields::Boolean
-          field :resource_quota_ids, N_('Resource quota ids')
+          field :resource_quota_ids, N_('Resource quota IDs')
         end
       end
     end
@@ -15,7 +15,7 @@ module HammerCLIForemanResourceQuota
     class ListCommand < HammerCLIForeman::ListCommand
       output do
         field :resource_quota_is_optional, _('Resource quota optional'), Fields::Boolean
-        field :resource_quota_ids, N_('Resource quota ids')
+        field :resource_quota_ids, N_('Resource quota IDs')
       end
     end
   end

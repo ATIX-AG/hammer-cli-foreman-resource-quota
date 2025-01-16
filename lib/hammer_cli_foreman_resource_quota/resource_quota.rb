@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 module HammerCLIForemanResourceQuota
-
   class ShowCommand < HammerCLIForeman::Command
     output do
       field :id, _('Id')
@@ -20,6 +19,7 @@ module HammerCLIForemanResourceQuota
         field :id, _('Id')
         field :name, _('Name')
         field :created_at, _('Created at')
+        field :description, _('Description')
         field :cpu_cores, _('CPU cores')
         field :memory_mb, _('Memory [MiB]')
         field :disk_gb, _('Disk space [GiB]')
