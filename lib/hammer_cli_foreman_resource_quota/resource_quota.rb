@@ -48,8 +48,8 @@ module HammerCLIForemanResourceQuota
       success_message _('Resource quota created.')
       failure_message _('Could not create resource quota')
 
-      option '--memory', "Memory", _('Maximum memory in MiB'), attribute_name: :memory_mb, format: HammerCLI::Options::Normalizers::Number.new
-      option '--disk-space', "Disk space", _('Maximum disk space in GiB'), attribute_name: :disk_gb, format: HammerCLI::Options::Normalizers::Number.new
+      option '--memory', "Memory", _('Maximum memory in MiB'), attribute_name: :option_memory_mb, format: HammerCLI::Options::Normalizers::Number.new
+      option '--disk-space', "Disk space", _('Maximum disk space in GiB'), attribute_name: :option_disk_gb, format: HammerCLI::Options::Normalizers::Number.new
 
       build_options do |o|
         o.without('memory_mb', 'disk_gb')
@@ -67,8 +67,31 @@ module HammerCLIForemanResourceQuota
       success_message _('Resource quota [%{name}] updated.')
       failure_message _('Could not update the resource quota')
 
-      option '--memory', "Memory", _('Maximum memory in MiB'), attribute_name: :memory_mb, format: HammerCLI::Options::Normalizers::Number.new
-      option '--disk-space', "Disk space", _('Maximum disk space in GiB'), attribute_name: :disk_gb, format: HammerCLI::Options::Normalizers::Number.new
+      option '--memory', "Memory", _('Maximum memory in MiB'), attribute_name: :option_memory_mb, format: HammerCLI::Options::Normalizers::Number.new
+      option '--disk-space', "Disk space", _('Maximum disk space in GiB'), attribute_name: :option_disk_gb, format: HammerCLI::Options::Normalizers::Number.new
+      option '--remove-memory-limit', :flag, _('Remove quota limit for memory')
+      option '--remove-disk-space-limit', :flag, _('Remove quota limit for disk space')
+      option '--remove-cpu-cores-limit', :flag, _('Remove quota limit for CPU cores')
+
+      validate_options do
+        if option(:option_remove_memory_limit).exist? && option(:option_memory_mb).exist?
+          raise ArgumentError, _("You cannot set '--remove-memory-limit' and '--memory' options at the same time")
+        end
+        if option(:option_remove_disk_space_limit).exist? && option(:option_disk_gb).exist?
+          raise ArgumentError, _("You cannot set '--remove-disk-space-limit' and '--disk-space' options at the same time")
+        end
+        if option(:option_remove_cpu_cores_limit).exist? && option(:option_cpu_cores).exist?
+          raise ArgumentError, _("You cannot set '--remove-cpu-cores-limit' and '--cpu-cores' options at the same time")
+        end
+      end
+
+      def request_params
+        super.tap do |opts|
+          opts['resource_quota']['memory_mb'] = nil if option_remove_memory_limit?
+          opts['resource_quota']['disk_gb'] = nil if option_remove_disk_space_limit?
+          opts['resource_quota']['cpu_cores'] = nil if option_remove_cpu_cores_limit?
+        end
+      end
 
       build_options do |o|
         o.without('memory_mb', 'disk_gb')
