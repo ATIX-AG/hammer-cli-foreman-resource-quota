@@ -57,14 +57,14 @@ module HammerCLIForemanResourceQuota
     end
 
     class DeleteCommand < HammerCLIForeman::DeleteCommand
-      success_message _('Resource quota [%{name}] was deleted.')
+      success_message _('Resource quota "%{name}" was deleted.')
       failure_message _('Could not delete the resource quota')
 
       build_options
     end
 
     class UpdateCommand < HammerCLIForeman::UpdateCommand
-      success_message _('Resource quota [%{name}] updated.')
+      success_message _('Resource quota "%{name}" updated.')
       failure_message _('Could not update the resource quota')
 
       option '--memory', "Memory", _('Maximum memory in MiB'), attribute_name: :option_memory_mb, format: HammerCLI::Options::Normalizers::Number.new
