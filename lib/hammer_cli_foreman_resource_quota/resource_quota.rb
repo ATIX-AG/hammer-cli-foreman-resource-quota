@@ -52,7 +52,8 @@ module HammerCLIForemanResourceQuota
       option '--disk-space', "Disk space", _('Maximum disk space in GiB'), attribute_name: :option_disk_gb, format: HammerCLI::Options::Normalizers::Number.new
 
       build_options do |o|
-        o.without('memory_mb', 'disk_gb')
+        o.expand.except(:locations, :organizations)
+        o.without('memory_mb', 'disk_gb', 'location_id', 'organization_id')
       end
     end
 
@@ -94,7 +95,8 @@ module HammerCLIForemanResourceQuota
       end
 
       build_options do |o|
-        o.without('memory_mb', 'disk_gb')
+        o.without('memory_mb', 'disk_gb', 'location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
       end
     end
 
