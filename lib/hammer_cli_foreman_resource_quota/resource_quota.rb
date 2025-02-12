@@ -25,7 +25,11 @@ module HammerCLIForemanResourceQuota
         field :disk_gb, _('Disk space [GiB]')
         field :number_of_hosts, _('Assigned hosts')
       end
-      build_options
+
+      build_options do |o|
+        o.without('location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
+      end
     end
 
     class InfoCommand < HammerCLIForeman::InfoCommand
@@ -41,7 +45,11 @@ module HammerCLIForemanResourceQuota
           end
         end
       end
-      build_options
+
+      build_options do |o|
+        o.without('location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
+      end
     end
 
     class CreateCommand < HammerCLIForeman::CreateCommand
@@ -61,7 +69,10 @@ module HammerCLIForemanResourceQuota
       success_message _('Resource quota "%{name}" was deleted.')
       failure_message _('Could not delete the resource quota')
 
-      build_options
+      build_options do |o|
+        o.without('location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
+      end
     end
 
     class UpdateCommand < HammerCLIForeman::UpdateCommand
@@ -108,7 +119,10 @@ module HammerCLIForemanResourceQuota
         field :name, _('Host name')
       end
 
-      build_options
+      build_options do |o|
+        o.without('location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
+      end
     end
 
     class ShowUsergroupsCommand < ShowCommand
@@ -119,7 +133,10 @@ module HammerCLIForemanResourceQuota
         field :name, _('Usergroup name')
       end
 
-      build_options
+      build_options do |o|
+        o.without('location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
+      end
     end
 
     class ShowUsersCommand < ShowCommand
@@ -130,7 +147,10 @@ module HammerCLIForemanResourceQuota
         field :login, _('User name')
       end
 
-      build_options
+      build_options do |o|
+        o.without('location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
+      end
     end
 
     class UnresolvedResourcesCommand < HammerCLIForeman::Command
@@ -141,7 +161,10 @@ module HammerCLIForemanResourceQuota
         field :missing_hosts, _('Missing hosts')
       end
 
-      build_options
+      build_options do |o|
+        o.without('location_id', 'organization_id')
+        o.expand.except(:locations, :organizations)
+      end
     end
 
     autoload_subcommands
