@@ -3,13 +3,20 @@
 # This file is distributed under the same license as the hammer_cli_foreman_resource_quota package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# pdolinic, 2025
+# mbacovsky <martin.bacovsky@gmail.com>, 2025
+# Nadja Heitmann <nadjah@atix.de>, 2025
+# Ettore Atalan <atalanttore@googlemail.com>, 2025
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_resource_quota 0.0.1\n"
+"Project-Id-Version: hammer_cli_foreman_resource_quota 0.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-12 14:40+0000\n"
+"POT-Creation-Date: 2025-01-08 13:12+0000\n"
 "PO-Revision-Date: 2025-01-07 14:47+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2025\n"
 "Language-Team: German (https://app.transifex.com/foreman/teams/114/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,16 +28,16 @@ msgid "Resource quota id"
 msgstr ""
 
 msgid "Id"
-msgstr ""
+msgstr "ID"
 
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 msgid "Created at"
-msgstr ""
+msgstr "Erstellt am"
 
 msgid "CPU cores"
-msgstr ""
+msgstr "CPU-Kerne"
 
 msgid "Memory [MiB]"
 msgstr ""
@@ -60,10 +67,10 @@ msgid "Could not create resource quota"
 msgstr ""
 
 msgid "Maximum memory in MiB"
-msgstr ""
+msgstr "Maximaler Speicher in MiB"
 
 msgid "Maximum disk space in GiB"
-msgstr ""
+msgstr "Maximaler Festplattenplatz in GiB"
 
 msgid "Resource quota [%{name}] was deleted."
 msgstr ""
